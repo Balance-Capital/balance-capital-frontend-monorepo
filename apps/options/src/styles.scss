@@ -1,0 +1,461 @@
+/* You can add global styles to this file, and also import other style files */
+/* For base styles (check out normalize.css) */
+@tailwind base;
+/* Simple reusable components provided by tailwind */
+@tailwind components;
+/* utility classes generated based on our tailwind.config.js */
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-page-bgColor: 253 255 255;
+    --color-modal-bgColor: 250 252 252;
+    --color-modal-strokeColor: 189 224 235;
+    --color-popup-bgColor: 250 252 252;
+    --color-popup-strokeColor: 189 224 235;
+    --color-divider-strokeColor: 189 224 235;
+    --color-tab-bgColor: 250 252 252;
+    --color-row-bgColor: 250 252 252;
+    --color-dropdown-bgColor: 253 255 255;
+    --color-dropdown-strokeColor: 250 252 252;
+
+    --color-white-txtColor: 189 224 235;
+    --color-gray-txtColor: 91 116 129;
+    --color-success-txtColor: 19 201 189;
+    --color-warn-txtColor: 255 88 108;
+    --color-yellow-txtColor: 191 169 75;
+    --color-unselect-txtColor: 75 97 108;
+
+    --color-white-iconColor: 189 224 235;
+    --color-green-iconColor: 19 201 189;
+    --color-red-iconColor: 255 88 108;
+
+    --color-btn-txtColor: 229 255 253;
+    --color-btn-green-bgColor: 18 179 168;
+    --color-btn-green-strokeColor: 19 201 189;
+    --color-btn-red-bgColor: 229 79 97;
+    --color-btn-red-strokeColor: 255 88 108;
+    --color-btn-unselect-txtColor: 91 116 129;
+    --color-btn-unselect-bgColor: 219 226 229;
+    --color-btn-black-txtColor: 6 11 11;
+    --color-btn-black-bgColor: 249 252 252;
+    --color-btn-black-strokeColor: 231 242 244;
+
+    --color-brandColor: 19 201 189;
+  }
+  :root[class~="dark"] {
+    --color-page-bgColor: 6 11 11;
+    --color-modal-bgColor: 8 13 14;
+    --color-modal-strokeColor: 13 24 26;
+    --color-popup-bgColor: 8 13 14;
+    --color-popup-strokeColor: 13 24 26;
+    --color-divider-strokeColor: 13 24 26;
+    --color-tab-bgColor: 10 19 20;
+    --color-row-bgColor: 10 19 20;
+    --color-dropdown-bgColor: 8 13 14;
+    --color-dropdown-strokeColor: 13 24 26;
+
+    --color-white-txtColor: 189 224 235;
+    --color-gray-txtColor: 91 116 129;
+    --color-success-txtColor: 19 201 189;
+    --color-warn-txtColor: 225 88 108;
+    --color-yellow-txtColor: 191 169 75;
+    --color-unselect-txtColor: 75 97 108;
+
+    --color-white-iconColor: 189 224 235;
+    --color-green-iconColor: 19 201 189;
+    --color-red-iconColor: 225 88 108;
+
+    --color-btn-txtColor: 229 255 253;
+    --color-btn-green-bgColor: 18 179 168;
+    --color-btn-green-strokeColor: 19 201 189;
+    --color-btn-red-bgColor: 229 79 97;
+    --color-btn-red-strokeColor: 225 88 108;
+    --color-btn-unselect-txtColor: 75 97 108;
+    --color-btn-unselect-bgColor: 32 42 47;
+    --color-btn-black-txtColor: 189 224 235;
+    --color-btn-black-bgColor: 8 13 14;
+    --color-btn-black-strokeColor: 13 24 26;
+
+    --color-brandColor: 19 201 189;
+  }
+}
+
+html {
+  background-color: rgb(var(--color-page-bgColor));
+  overflow: auto;
+}
+
+body {
+  background-color: rgb(var(--color-page-bgColor)) !important;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box !important;
+  // color: #BDE0EB;
+}
+
+div {
+  color: #bde0eb;
+}
+
+@font-face {
+  font-family: OcrExtendedRegular;
+  src: url("/assets/fonts/Ocr-Extended-Regular.ttf");
+}
+@font-face {
+  font-family: InterLight;
+  src: url("/assets/fonts/Inter-Light.ttf");
+}
+@font-face {
+  font-family: InterMedium;
+  src: url("/assets/fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: InterRegular;
+  src: url("/assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: LatoLight;
+  src: url("/assets/fonts/Lato-Light.ttf");
+}
+@font-face {
+  font-family: LatoMedium;
+  src: url("/assets/fonts/Lato-Medium.ttf");
+}
+@font-face {
+  font-family: LatoRegular;
+  src: url("/assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url("/assets/fonts/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: MontserratMedium;
+  src: url("/assets/fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: MontserratRegular;
+  src: url("/assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: PoppinsLight;
+  src: url("/assets/fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url("/assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url("/assets/fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url("/assets/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: RobotoRegular;
+  src: url("/assets/fonts/Roboto-Regular.ttf");
+}
+
+* {
+  font-family: "InterRegular";
+}
+.oneRowEllipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.twoRowEllipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.borderSpacing {
+  border-spacing: 0px 10px;
+}
+
+.button-loading {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    animation: 1.5s linear 0.5s infinite normal none running animation-button-loading;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.35),
+      transparent
+    );
+    content: "";
+    position: absolute;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    z-index: 1;
+  }
+}
+
+@keyframes animation-button-loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #272626;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #161515;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.customize-scrollbar {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #272626;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #161515;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+.noti-badge {
+  background-color: #12b3a8;
+  border-radius: 100%;
+  position: absolute;
+
+  &::after {
+    content: "";
+    background-color: #12b3a8;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.6;
+
+    animation-name: noti-badge-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    @apply w-[6px] h-[6px] md:w-[8px] md:h-[8px] top-0 right-0;
+  }
+
+  @apply w-[6px] h-[6px] top-[8px] right-[8px] md:w-[8px] md:h-[8px] md:top-[12px] md:right-[12px];
+}
+
+.flashing-dot {
+  background-color: #12b3a8;
+  border-radius: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: #12b3a8;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.6;
+
+    animation-name: noti-badge-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    @apply w-[6px] h-[6px] md:w-[8px] md:h-[8px] top-0 right-0;
+  }
+
+  @apply w-[6px] h-[6px] md:w-[8px] md:h-[8px];
+}
+
+@keyframes noti-badge-animation {
+  0% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+.tour-tooltip {
+  background-color: transparent !important;
+
+  * {
+    font-family: "InterRegular" !important;
+    color: white !important;
+  }
+
+  .shepherd-arrow {
+    &::before {
+      background-color: #090b0d !important;
+      border: 2px solid #0d1112 !important;
+    }
+  }
+
+  .shepherd-content {
+    border-radius: 16px;
+    background-color: #090b0d;
+    border: 2px solid #0d1112;
+
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 15px 20px !important;
+
+    .shepherd-header {
+      background-color: transparent !important;
+      position: relative !important;
+      padding: 0 0 0 20px !important;
+
+      &::before {
+        content: "";
+        background-color: #12b3a8;
+        border-radius: 100%;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 4px);
+        width: 8px;
+        height: 8px;
+      }
+
+      &::after {
+        content: "";
+        background-color: #12b3a8;
+        border-radius: 100%;
+        position: absolute;
+        opacity: 0.6;
+
+        animation-name: noti-badge-animation;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        width: 8px;
+        height: 8px;
+        left: 0;
+        top: calc(50% - 4px);
+      }
+    }
+
+    .shepherd-text {
+      color: #fffc !important;
+      padding: 0 !important;
+      font-size: 14px !important;
+
+      a {
+        color: #12b3a8 !important;
+        text-decoration: underline;
+      }
+    }
+
+    .shepherd-footer {
+      padding: 0 !important;
+      justify-content: flex-start !important;
+
+      .shepherd-button-secondary {
+        background-color: transparent !important;
+        font-size: 14px !important;
+        color: #12b3a8 !important;
+        padding: 4px 8px !important;
+        border-radius: 4px !important;
+
+        transition: all 0.25s ease-in-out !important;
+
+        &:hover {
+          background-color: #12b3a80b !important;
+        }
+      }
+    }
+  }
+}
+
+.flow-animation {
+  animation: 20s linear 0s infinite normal none running price-bar-flow-animation;
+  // transform: translateX(50%);
+}
+
+@keyframes price-bar-flow-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}

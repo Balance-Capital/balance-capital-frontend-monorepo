@@ -1,0 +1,28 @@
+{
+  "root": "apps/options-widget-e2e",
+  "sourceRoot": "apps/options-widget-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/options-widget-e2e/cypress.json",
+        "devServerTarget": "options-widget:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "options-widget:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/options-widget-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["options-widget"]
+}

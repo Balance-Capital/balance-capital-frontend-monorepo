@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="Ryze_Fail_Icon" data-name="Ryze Fail Icon" transform="translate(-757 -48)">
+    <circle id="Ellipse_1045" data-name="Ellipse 1045" cx="28" cy="28" r="28" transform="translate(757 48)" fill="#1e88e51a"/>
+    <path id="Ellipse_1045_-_Outline" data-name="Ellipse 1045 - Outline" d="M28,2A26.007,26.007,0,0,0,17.88,51.958,26.007,26.007,0,0,0,38.12,4.042,25.835,25.835,0,0,0,28,2m0-2A28,28,0,1,1,0,28,28,28,0,0,1,28,0Z" transform="translate(757 48)" fill="#1e88e5"/>
+    <g id="Group_13939" data-name="Group 13939" transform="translate(0 -0.552)">
+      <path id="Path_3932" data-name="Path 3932" d="M.1,21.4a2.6,2.6,0,0,1-2.6-2.6V4.1a2.6,2.6,0,0,1,5.195,0V18.8A2.6,2.6,0,0,1,.1,21.4Z" transform="translate(784.902 70)" fill="#1e88e5"/>
+      <circle id="Ellipse_1060" data-name="Ellipse 1060" cx="3" cy="3" r="3" transform="translate(782 62)" fill="#1e88e5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "projects": {
+    "balance": "apps/balance",
+    "nft-market": "apps/nft-market",
+    "nft-market-e2e": "apps/nft-market-e2e",
+    "options": "apps/options",
+    "options-e2e": "apps/options-e2e",
+    "options-widget": "apps/options-widget",
+    "options-widget-e2e": "apps/options-widget-e2e",
+    "shared-helpers": "libs/shared/helpers",
+    "shared-web3": "libs/shared/web3",
+    "usdb": "apps/usdb",
+    "usdb-e2e": "apps/usdb-e2e"
+  }
+}

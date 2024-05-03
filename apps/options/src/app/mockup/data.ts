@@ -1,0 +1,40 @@
+import { HistoryProps } from "../core/types/basic.types";
+
+export const mockupHistoryData: HistoryProps[] = [
+  {
+    type: "Up",
+    asset: "ETH/USD",
+    quantity: 650,
+    payout: 1300,
+    open: 1343,
+    close: undefined,
+    time: new Date(),
+    expiration: new Date(),
+    timer: undefined,
+    status: true,
+  },
+  {
+    type: "Up",
+    asset: "ETH/USD",
+    quantity: 650,
+    payout: undefined,
+    open: 1343,
+    close: 1339.64,
+    time: new Date(),
+    expiration: new Date(),
+    timer: undefined,
+    status: false,
+  },
+  {
+    type: "Up",
+    asset: "ETH/USD",
+    quantity: 650,
+    payout: undefined,
+    open: 1343,
+    close: 1339.64,
+    time: new Date(),
+    expiration: new Date(),
+    timer: undefined,
+    status: false,
+  },
+];

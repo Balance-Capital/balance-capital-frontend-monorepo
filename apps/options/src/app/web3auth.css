@@ -1,0 +1,19 @@
+
+.w3a-parent-container :is(.dark #w3a-modal .w3a-modal__inner) {
+    --tw-border-opacity: 1;
+    --tw-bg-opacity: 1;
+    background-color: rgb(8 13 14/var(--tw-bg-opacity)) !important;
+    border-color: rgb(8 13 14/var(--tw-border-opacity));
+}
+
+.w3a-parent-container :is(.dark #w3a-modal .w3a-text-field) {
+    background-color: transparent !important;
+}
+
+.w3a-parent-container :is(.dark #w3a-modal .w3a-modal__footer) {
+    background-color: #122124;
+}
+
+.w3a-parent-container .w3a-modal__footer {
+    display: none;
+}

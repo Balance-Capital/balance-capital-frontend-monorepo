@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: OcrExtendedRegular;
+  src: url("/assets/fonts/Ocr-Extended-Regular.ttf");
+}
+@font-face {
+  font-family: InterLight;
+  src: url("/assets/fonts/Inter-Light.ttf");
+}
+@font-face {
+  font-family: InterMedium;
+  src: url("/assets/fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: InterRegular;
+  src: url("/assets/fonts/Inter-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #000;
+  color: #fff;
+  font-size: calc(15px + 0.390625vw);
+  font-family: "InterRegular";
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.firstRowEllipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secondRowEllipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.colorInput::-webkit-color-swatch-wrapper,
+.colorInput::-webkit-color-swatch {
+  padding: 0;
+  border-radius: 9px;
+  border: none;
+}
+.colorInput::-moz-color-swatch {
+  padding: 0;
+  border-radius: 9px;
+  border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #12b3a8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #12b3a8;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

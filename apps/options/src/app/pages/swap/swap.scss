@@ -1,0 +1,158 @@
+#swap-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ohm-card {
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: none;
+    box-shadow: none;
+  }
+
+  .line-border {
+    border: solid 2px #a6a9be;
+    border-radius: 5px;
+  }
+
+  .dash-border {
+    border: dashed 2px #a6a9be;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .price-impact {
+    .MuiButton-contained {
+      background: #f44336;
+      color: #fff;
+    }
+  }
+
+  .justify-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bonding-banner {
+    background-size: 100%;
+    background-repeat: repeat-x;
+    max-width: 833px;
+    width: 100%;
+    aspect-ratio: 12/3;
+
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.network-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #090c0d;
+}
+
+.token-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #090c0d;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bond-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  background: #1e2630;
+  border-radius: 5px;
+
+  .MuiTable-root {
+    margin: 10px 0;
+  }
+
+  .MuiTableCell-head {
+    color: white !important;
+  }
+
+  .MuiTableCell-root {
+    p {
+      margin: 0 !important;
+      display: flex !important;
+      align-items: center;
+      // justify-content: flex-start;
+      white-space: nowrap;
+      img {
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .MuiTableBody-root .MuiTableRow-root .MuiTableCell-alignLeft.bond-name-cell {
+    justify-content: space-between;
+    display: flex;
+    div.bond-name {
+      width: 60%;
+      margin-left: 5px !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      align-items: flex-start;
+      p {
+        margin-bottom: unset !important;
+        line-height: 140% !important;
+      }
+      svg {
+        margin-left: 3px !important;
+        font-size: 1 rem !important;
+      }
+    }
+  }
+}
+
+body[is-paralyzed] {
+  pointer-events: none;
+  cursor: progress;
+
+  .MuiSnackbar-root {
+    a[href],
+    button {
+      pointer-events: all;
+      cursor: pointer;
+    }
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 0.4em;
+}
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(17, 23, 26);
+  outline: 1px solid #11171a;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}

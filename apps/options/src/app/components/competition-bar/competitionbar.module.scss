@@ -1,0 +1,12 @@
+@keyframes linearScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.linearScroll {
+  animation: linearScroll 15s linear infinite;
+}
